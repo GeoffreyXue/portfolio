@@ -43,7 +43,7 @@
 	</p>
 </div>
 
-<style>
+<style lang="postcss">
 	span {
 		display: inline-flex;
 		justify-content: center;
