@@ -8,9 +8,9 @@ publish(
         user: {
             name: 'Geoffrey Xue',
             email: 'xuegeoff@gmail.com'
-        }
+        },
+        dotfiles: true,
     },
-    dotfiles: true,
     () => {
         console.log('Deploy Complete!')
     }
