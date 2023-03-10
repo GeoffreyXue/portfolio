@@ -1,5 +1,9 @@
 # Link to Website: [https://geoffreyxue.github.io/portfolio/](https://geoffreyxue.github.io/portfolio/)
 
+## TODO:
+- https://fireship.io/lessons/svelte-v3-overview-firebase/
+- Set up Google Photos API for photos
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
