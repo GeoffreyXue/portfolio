@@ -6,7 +6,7 @@
 	console.log(base);
 </script>
 
-<header class="justify-left flex pl-56 pt-16">
+<header class="justify-left m-auto flex w-full max-w-5xl p-4 pt-16">
 	<nav class="flex justify-center">
 		<ul
 			class="align-center relative m-0 flex h-12 list-none justify-center gap-2 bg-white bg-contain p-0"
@@ -16,6 +16,9 @@
 			</li>
 			<li aria-current={$page.url.pathname === base + '/photos' ? 'page' : undefined}>
 				<a href="{base}/photos">Photos</a>
+			</li>
+			<li aria-current={$page.url.pathname === base + '/resume' ? 'page' : undefined}>
+				<a href="{base}/resume">Resume</a>
 			</li>
 		</ul>
 	</nav>
@@ -46,7 +49,7 @@
 		padding: 0 0.5rem;
 		color: var(--color-text);
 		font-weight: 600;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
@@ -58,6 +61,6 @@
 	}
 
 	li[aria-current='page'] > a {
-		color: var(--color-theme-1);
+		color: var(--color-theme-1-alt);
 	}
 </style>

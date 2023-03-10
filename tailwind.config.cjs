@@ -12,6 +12,7 @@ module.exports = {
         "bg-1": "var(--color-bg-1)",
         "bg-2": "var(--color-bg-2)",
         "theme-1": "var(--color-theme-1)",
+        "theme-1-alt": "var(--color-theme-1-alt)",
         "theme-2": "var(--color-theme-2)",
         "text": "var(--color-text)"
       },

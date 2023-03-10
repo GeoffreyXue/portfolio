@@ -1,21 +1,8 @@
 <svelte:head>
-	<title>Photos</title>
-	<meta name="description" content="Photos taken by Geoffrey Xue" />
+	<title>GX: Photos</title>
+	<meta name="description" content="Geoffrey Xue's Photos" />
 </svelte:head>
 
-<div class="text-column">
-	<h1>About this app</h1>
-
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
-
-	<pre>npm create svelte@latest</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
+<div>
+	<h1>A list of photos that I've taken</h1>
 </div>

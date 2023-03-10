@@ -1,7 +1,7 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
-	import logo from '$lib/images/svelte-logo.svg';
+	import monkeytype from '$lib/images/monkeytype.svg';
 	import github from '$lib/images/github.svg';
 	import linkedin from '$lib/images/linkedin.svg';
 </script>
@@ -22,8 +22,8 @@
 		<a href="http://linkedin.com/geoffreyxue">
 			<img src={linkedin} alt="Linkedin" />
 		</a>
-		<a href="https://github.com/sveltejs/kit">
-			<img src={logo} alt="Resume" />
+		<a href="https://monkeytype.com/profile/cheffray">
+			<img src={monkeytype} alt="Monkeytype" />
 		</a>
 	</footer>
 </div>
