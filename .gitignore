@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-/build
+# /build disabled to allow gh pages to render site
 /.svelte-kit
 /package
 .env
