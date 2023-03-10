@@ -1,53 +1,29 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
+	import logo from '$lib/images/svelte-logo.svg';
+	import github from '$lib/images/github.svg';
+	import linkedin from '$lib/images/linkedin.svg';
 </script>
 
-<div class="app">
+<div class="flex min-h-screen flex-col">
 	<Header />
 
-	<main>
+	<main class="m-auto box-border flex w-full max-w-5xl flex-1 flex-col p-4">
 		<slot />
 	</main>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+	<footer
+		class="flex w-full justify-end gap-4 p-4 pr-16 [&>a]:flex [&>a]:aspect-square [&>a]:h-full [&>a]:items-center [&_img]:h-8 [&_img]:w-8 [&_img]:object-contain"
+	>
+		<a href="https://github.com/GeoffreyXue">
+			<img src={github} alt="GitHub" />
+		</a>
+		<a href="http://linkedin.com/geoffreyxue">
+			<img src={linkedin} alt="Linkedin" />
+		</a>
+		<a href="https://github.com/sveltejs/kit">
+			<img src={logo} alt="Resume" />
+		</a>
 	</footer>
 </div>
-
-<style lang="postcss">
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-</style>

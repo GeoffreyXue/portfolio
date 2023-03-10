@@ -1,95 +1,27 @@
 <script>
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
+
+	console.log($page.url.pathname);
+	console.log(base);
 </script>
 
-<header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
-
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+<header class="justify-left flex pl-56 pt-16">
+	<nav class="flex justify-center">
+		<ul
+			class="align-center relative m-0 flex h-12 list-none justify-center gap-2 bg-white bg-contain p-0"
+		>
+			<li aria-current={$page.url.pathname === base ? 'page' : undefined}>
 				<a href="{base}/">Home</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="{base}/about">About</a>
+			<li aria-current={$page.url.pathname === base + '/photos' ? 'page' : undefined}>
+				<a href="{base}/photos">Photos</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
 	</nav>
-
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
-		</a>
-	</div>
 </header>
 
 <style lang="postcss">
-	header {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	}
-
-	nav {
-		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
-	}
-
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
-
 	li {
 		position: relative;
 		height: 100%;
@@ -101,10 +33,10 @@
 		width: 0;
 		height: 0;
 		position: absolute;
-		top: 0;
+		bottom: 0;
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
+		border-bottom: var(--size) solid var(--color-theme-1);
 	}
 
 	nav a {
@@ -113,8 +45,8 @@
 		align-items: center;
 		padding: 0 0.5rem;
 		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.8rem;
+		font-weight: 600;
+		font-size: 1.2rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
@@ -122,6 +54,10 @@
 	}
 
 	a:hover {
+		color: var(--color-theme-1);
+	}
+
+	li[aria-current='page'] > a {
 		color: var(--color-theme-1);
 	}
 </style>
