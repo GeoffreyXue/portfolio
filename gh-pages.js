@@ -10,6 +10,7 @@ publish(
             email: 'xuegeoff@gmail.com'
         }
     },
+    dotfiles: true,
     () => {
         console.log('Deploy Complete!')
     }
