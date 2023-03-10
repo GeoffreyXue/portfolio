@@ -12,7 +12,9 @@
 	<div class="flex flex-row gap-4">
 		<div class="flex-[0.7]">
 			<h1 class="w-full text-6xl font-bold">Hi, I'm Geoffrey Xue.</h1>
+			<br />
 			<h2 class="text-xl">Interested in programming, photography, and competitive typing.</h2>
+			<h2 class="text-xl">Contact me at xuegeoff@gmail.com, or 262-765-1864.</h2>
 		</div>
 		<picture class="flex-[0.3]">
 			<img src={portrait} alt="Portrait" class="aspect-square w-full rounded-md object-cover" />
